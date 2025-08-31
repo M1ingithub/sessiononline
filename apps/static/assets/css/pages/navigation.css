@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "enrique";
+    src: url("../fonts/Enrique-Round.ttf") format("truetype");
+}
+
+#navbartop {
+    width: 100%;
+    height: 72px;
+    min-width: 280px;
+    margin: 0 auto;
+    background-color: #365a63;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#navbarbot {
+    width: 100%;
+    height: 60px;
+    min-width: 280px;
+    margin: 0 auto;
+    background-color: #2a4f58;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#navbartopdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarbotdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+#logo {
+    color: #c7d1e2;
+    font-size: 22px;
+}
+
+.navbarbutton {
+    height: 60px;
+    width: 130px;
+    background-color: #2a4f58;
+    color: #c7d1e2;
+    font-family: inherit;
+    font-size: 16px;
+}

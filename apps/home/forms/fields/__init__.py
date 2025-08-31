@@ -1,0 +1,2 @@
+from .charfieldfields import LoginusernameField
+from .charfieldfields import LoginpasswordField

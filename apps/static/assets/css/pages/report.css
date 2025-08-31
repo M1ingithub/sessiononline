@@ -1,0 +1,11 @@
+
+#reportwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#report {
+    color: #c7d1e2;
+}

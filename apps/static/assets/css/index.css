@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "enrique";
+  src: url("../fonts/Enrique-Round.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "enrique";
+  background-color: #365a63;
+}
+
+.loginusernamewidget {
+  width: 180px;
+  height: 32px;
+  font-size: 120%;
+  text-align: center;
+  background-color: #2E3440;
+  color: #c7d1e2;
+  border: none;
+  border-radius: 10px;
+  font-family: "enrique", Fallback, sans-serif;
+  margin-top: 20px;
+}
+.loginusernamewidget::placeholder {
+  color: #5E81AC;
+}
+.loginusernamewidget:focus {
+  border: #88C0D0;
+}
+
+.loginpasswordwidget {
+  width: 180px;
+  height: 32px;
+  font-size: 120%;
+  text-align: center;
+  background-color: #2E3440;
+  color: #c7d1e2;
+  border: none;
+  border-radius: 10px;
+  font-family: "enrique", Fallback, sans-serif;
+  margin-top: 20px;
+}
+.loginpasswordwidget::placeholder {
+  color: #5E81AC;
+}
+.loginpasswordwidget:focus {
+  border: #88C0D0;
+}

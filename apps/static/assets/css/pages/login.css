@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "enrique";
+  src: url("../fonts/Enrique-Round.ttf") format("truetype");
+}
+
+#loginwrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+#logingrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100vh;
+  background-color: transparent;
+}
+
+#logingrid2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: 100vw;
+  background-color: transparent;
+}
+
+#logingriditems:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}
+
+#loginbox_wrapper {
+  height: 370px;
+  width: 250px;
+  background-color: #434C5E;
+  border-radius: 20px;
+}
+
+#logintopmessagebox {
+  height: 60px;
+  background-color: #4C566A;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#logintopmessagetext {
+  text-align: center;
+  color: #c7d1e2;
+  font-size: 125%;
+  padding-top: 18px;
+}
+
+#loginusernameformwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 21px;
+  padding-bottom: 10px;
+}
+
+#loginpasswordformwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#loginremembermecheckwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#loginremembermecheckcontent {
+  padding-left: 0px;
+}
+
+#rememberMe {
+  position: relative;
+  left: 57px;
+  top: 22px;
+  opacity: 0;
+}
+
+#rememberMe:checked + .loginremembermecheckboxlabel svg {
+  stroke: #77a575;
+}
+#rememberMe:checked + .loginremembermecheckboxlabel svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+#rememberMe:checked + .loginremembermecheckboxlabel svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+.loginremembermecheckboxlabel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+.loginremembermecheckboxlabel:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.loginremembermecheckboxlabel svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #739bd0;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+.loginremembermecheckboxlabel svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+.loginremembermecheckboxlabel svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+.loginremembermecheckboxlabel:hover:before {
+  opacity: 1;
+}
+.loginremembermecheckboxlabel:hover svg {
+  stroke: #88C0D0;
+}
+
+.loginremembermecheckboxlabelitem {
+  display: flex;
+  box-sizing: border-box;
+  flex-basis: auto;
+}
+
+#login-rememberme-checkbox-label-item-1 {
+  width: 85px;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+#login-rememberme-checkbox-label-item-2 {
+  justify-content: flex-start;
+}
+
+#rememberme-checkbox-label-text {
+  text-align: center;
+  color: #c7d1e2;
+  font-size: 100%;
+}
+
+#sbwrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 21px;
+}
+
+#sb-buttonwrapper {
+  position: relative;
+  width: 100%;
+  display: grid;
+}
+
+#sb-button {
+  width: 180px;
+  height: 32px;
+  border-radius: 10px;
+  border: none;
+  background-color: #739bd0;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+#sb-button svg {
+  stroke: red;
+}
+#sb-button:hover svg {
+  stroke: #88C0D0;
+}
+#sb-button:hover {
+  background-color: #88C0D0;
+}
+
+#sb-b-textwrapper {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#sb-b-svgwrapper {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#sb-b-sb-rectangle {
+  fill: none;
+}

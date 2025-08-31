@@ -1,0 +1,22 @@
+
+{% extends "basepages/basepage-fs.html" %}
+
+{% block title %} logout {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/logout.css" />
+{% endblock %}
+
+{% block content %}
+
+    <div>
+        <div id="logoutwrapper">
+            <div id="logout">
+                <button id="loginbutton" onclick="location.href='/login'">Login
+                </button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

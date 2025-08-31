@@ -1,0 +1,38 @@
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/navigation.css" />
+{% endblock %}
+
+
+<div>
+  <nav id="navbartop">
+    <div id="navbartopdiv">
+      <p id="logo">
+        session.online
+      </p>
+    </div>
+  </nav>
+  <nav id="navbarbot">
+    <div id="navbarbotdiv">
+      <button id="buttona" class="navbarbutton" onclick="location.href='/'">communities
+      </button>
+      <button id="buttonb" class="navbarbutton" onclick="location.href='/addcommunity'">add comm.
+      </button>
+      <button id="buttonc" class="navbarbutton" onclick="location.href='/report'">report comm.
+      </button>
+      <button id="buttond" class="navbarbutton" onclick="location.href='/about'">about
+      </button>
+      {% if request.user.is_authenticated %}
+        <form method="post" action="{% url 'logout' %}">
+          {% csrf_token %}
+          <button id="buttone" class="navbarbutton" type="submit" onclick="location.href='/logout'">logout
+          </button>
+        </form>
+      {% else %}
+        <button id="buttone" class="navbarbutton" onclick="location.href='/login'">login
+        </button>
+      {% endif %}
+    </div>
+  </nav>
+</div>
+

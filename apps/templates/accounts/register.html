@@ -1,0 +1,77 @@
+{% extends "basepages/basepage-fs.html" %}
+
+{% block title %} Sign Up {% endblock %} 
+
+{% block body_class %}sign-in-basic{% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/register.css" />
+{% endblock %}
+
+{% block content %}
+  
+
+<div class="registerwrapper">
+  <div class="registergriditems">
+    <div class="registergrid">
+      <div class="registergrid2">
+        <div class="">
+          <p class="">
+            {% if msg %}
+              {{ msg | safe }}
+            {% else %}
+              Enter your email and password to register
+            {% endif %}
+          </p>
+        </div>
+        <div class="">
+
+          {% if success %}
+          
+            <p class="">
+              <a href="{% url 'login' %}" class="">Sign IN</a> 
+            </p>
+
+          {% else %} 
+
+            <form role="form" method="post" action="">
+
+              {% csrf_token %} 
+
+              <div class="">
+                {{ form.username }}
+              </div>
+              <span class="">{{ form.username.errors }}</span>
+
+              <div class="">
+                {{ form.password1 }}
+              </div>
+              <span class="">{{ form.password1.errors }}</span>
+
+              <div class="">
+                {{ form.password2 }}
+              </div>
+              <span class="">{{ form.password2.errors }}</span>
+
+              <div class="">
+                <button type="submit" name="register" 
+                        class="">Sign Up</button>
+              </div>
+              <p class="">
+                Already have an account?
+                <a href="{% url 'login' %}" class="">Sign IN</a>
+              </p>
+            </form>
+          
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+

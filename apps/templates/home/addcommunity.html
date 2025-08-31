@@ -1,0 +1,22 @@
+{% extends "basepages/basepage.html" %}
+
+{% block title %} add community {% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/addcommunity.css" />
+{% endblock %}
+
+{% block content %}
+
+  <div>
+      <form method="POST" enctype="multipart/form-data">
+          <div style="display:flex;justify-content:center;align-items:center;flex-direction:column">
+              <p id="pastecommunityurl">paste community URL</p>
+              {% csrf_token %}
+              {{ form }}
+              <button id="addbutton" type="submit" value="Submit">Add community</button>
+          </div>
+      </form>
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "enrique";
+  src: url("Enrique-Round.ttf") format("truetype");
+}
+
+.registerwrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.registergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.registergrid2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.registerngriditems:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}

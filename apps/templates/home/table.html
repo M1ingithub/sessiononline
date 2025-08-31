@@ -1,0 +1,17 @@
+{% extends "basepages/basepage.html" %}
+
+{% load render_table from django_tables2 %}
+
+{% block title %} communities {% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/table.css" />
+{% endblock %}
+
+{% block content %}
+
+<tr class="{% cycle "odd" "even" %}"> </tr>
+
+{% render_table object_list %}
+
+{% endblock content %}

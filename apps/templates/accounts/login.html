@@ -1,0 +1,87 @@
+
+{% extends "basepages/basepage-fs.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block body_class %}sign-in-basic{% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/login.css" />
+{% endblock %}
+
+{% block content %}
+      <div id="loginwrapper">
+          <div id="logingrid">
+              <div id="logingrid2">
+                  <div id="logingriditems">
+                      <div id="loginbox_wrapper">
+                          <div id="loginbox-primary">
+                              <div id="logintopmessagebox">
+                                <p id="logintopmessagetext">
+                                  {% if msg %}
+                                    {{ msg | safe }}
+                                  {% else %}
+                                    WELCOME
+                                  {% endif %}
+                                </p>
+                              </div>
+                              <div class="loginbox">
+                                <form role="form" method="post" action="" class="text-start">
+
+                                  {% csrf_token %}
+
+                                  <div id="loginusernameformwrapper">
+                                    {{ form.username }}
+                                  </div>
+                                  <div id="loginpasswordformwrapper">
+                                    {{ form.password }}
+                                  </div>
+                                  <div id="loginremembermecheckwrapper">
+                                    <div id="loginremembermecheckcontent">
+                                      <input class="loginremembermecheckboxinput" type="checkbox" id="rememberMe">
+                                      <label class="loginremembermecheckboxlabel" for="rememberMe">
+                                        <div class="loginremembermecheckboxlabelitem" id="login-rememberme-checkbox-label-item-1">
+                                          <svg width="22px" height="22px" viewBox="0 0 18 18">
+                                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                          </svg>
+                                        </div>
+                                        <div class="loginremembermecheckboxlabelitem" id="login-rememberme-checkbox-label-item-2">
+                                          <span id="rememberme-checkbox-label-text">Remember me?</span>
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div id="sbwrapper">
+                                    <div id="sb-buttonwrapper">
+                                      <button type="submit" name="login" id="sb-button">
+                                        <div id="sb-b-gridwrapper">
+                                          <div id="sb-b-textwrapper">
+                                            <span id="sb-b-text">LOGIN</span>
+                                          </div>
+                                          <div id="sb-b-svgwrapper">
+                                            <svg id="sb-b-svgborder" width="184px" height="36px" viewBox="0 0 184 36">
+                                              <!-- Rounded corner rectangle -->
+                                              <rect id="sb-b-sb-rectangle" x="0" width="184" height="36" ry="10" rx="10" stroke-width="3"/>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <p class="mt-4 text-sm text-center">
+                                    Don't have an account?
+                                    <a href="{% url 'register' %}" class="text-primary text-gradient font-weight-bold">Sign UP</a>
+                                  </p>
+                                </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+{% endblock content %}
+

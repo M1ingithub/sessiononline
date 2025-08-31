@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  {% load static %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+  <link rel="icon" type="image/png" href="{{ ASSETS_ROOT }}/assets/img/favicon.ico">
+
+  <title>
+    session.online | {% block title %}{% endblock %}
+  </title>
+
+  <link id="pagestyle" href="{{ ASSETS_ROOT }}/css/index.css" rel="stylesheet" />
+  
+  {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+
+  {% include 'includes/navigation.html' %}
+
+  {% block content %}{% endblock content %}
+
+</body>
+</html>

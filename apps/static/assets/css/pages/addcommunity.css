@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "enrique";
+    src: url("../fonts/Enrique-Round.ttf") format("truetype");
+}
+
+#pastecommunityurl {
+    color: #c7d1e2;
+    font-size: 16px;
+}
+
+#addbutton {
+    height: 60px;
+    width: 130px;
+    background-color: #2a4f58;
+    color: #c7d1e2;
+    font-family: inherit;
+    font-size: 16px;
+    margin-top: 22px;
+}

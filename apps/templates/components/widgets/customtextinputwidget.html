@@ -1,0 +1,20 @@
+<!--
+tämä on jätetty malliksi miten paska toimii
+voi poistaa
+--->
+
+
+{% with css_classes=widget.attrs.class|default:'' %}
+    <input type="{{ widget.type }}" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}"{% endif %}{% include "django/forms/widgets/attrs.html" %}>
+{% if max_length %}
+    <div class="char-counter" data-max-length="{{ max_length }}"></div>
+{% endif %}
+{% endwith %}
+
+
+<!--
+original django template
+https://github.com/django/django/blob/main/django/forms/templates/django/forms/widgets/input.html
+
+<input type="{{ widget.type }}" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}"{% endif %}{% include "django/forms/widgets/attrs.html" %}>
+--->

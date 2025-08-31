@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="{{ ASSETS_ROOT }}/img/favicon.png">
+
+  <title>
+    session.online | {% block title %}{% endblock %}
+  </title>
+
+  <link id="pagestyle" href="{{ ASSETS_ROOT }}/css/index.css" rel="stylesheet" />
+
+  {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+
+  {% block content %}{% endblock content %}
+
+</body>
+</html>

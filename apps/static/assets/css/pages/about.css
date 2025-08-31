@@ -1,0 +1,11 @@
+
+#aboutwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    color: #c7d1e2;
+}

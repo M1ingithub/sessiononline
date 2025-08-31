@@ -1,0 +1,43 @@
+
+
+table {
+    width: 100vw;
+    overflow-x: auto;
+    color: #c7d1e2;
+
+    border-color: #28454d;
+    border: 1px;
+    border-radius: 1px;
+    border-width: 1px;
+    /*
+    border-collapse: collapse;
+    */
+}
+
+.table-hover {
+    color: #c7d1e2;
+}
+
+.th {
+    background-color: #365a63;
+    color: #c7d1e2;
+}
+
+.tf {
+    background-color: #365a63;
+    color: #c7d1e2;
+}
+
+
+.td {
+    color: #c7d1e2;
+}
+
+
+.odd {
+    background-color: #365a63;
+}
+
+.even {
+    background-color: #2a4f58;
+}

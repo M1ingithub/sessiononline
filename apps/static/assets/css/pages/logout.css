@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: "enrique";
+    src: url("../fonts/Enrique-Round.ttf") format("truetype");
+}
+
+#logoutwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout {
+    color: #c7d1e2;
+}
+
+#loginbutton {
+    height: 60px;
+    width: 130px;
+    background-color: #2a4f58;
+    color: #c7d1e2;
+    font-family: inherit;
+    font-size: 16px;
+    margin-top: 22px;
+    padding-top: 22px;
+}
