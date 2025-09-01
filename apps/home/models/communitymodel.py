@@ -10,4 +10,4 @@ class CommunityModel(models.Model):
     description = models.CharField()
     name = models.CharField()
     token = models.CharField()
-    # slug = models.SlugField(max_length=100, unique=True, default="")
+    

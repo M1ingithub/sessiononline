@@ -7,6 +7,22 @@ env = environ.Env(
     DEBUG=(bool, True)
 )
 
+ALLOWED_HOSTS = [
+    'http://www.session.online',
+    'https://www.session.online',
+    'session.online',
+    'www.session.online',
+    '162.254.34.158',
+    'http://162.254.34.158',
+    'https://162.254.34.158',
+    'http://localhost:5432',
+    'http://localhost',
+    'localhost'
+    'http://127.0.0.1',
+    '127.0.0.1',
+    '127.0.0.1:8000',
+]
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 CORE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
