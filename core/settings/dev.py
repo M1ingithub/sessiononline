@@ -7,14 +7,8 @@ env = environ.Env(
     DEBUG=(bool, True)
 )
 
+# load development server
 ALLOWED_HOSTS = [
-    'http://www.session.online',
-    'https://www.session.online',
-    'session.online',
-    'www.session.online',
-    '162.254.34.158',
-    'http://162.254.34.158',
-    'https://162.254.34.158',
     'http://localhost:5432',
     'http://localhost',
     'localhost'
@@ -28,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 CORE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'asd'
