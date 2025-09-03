@@ -1,10 +1,5 @@
 # byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
-
-# tests and coverage
-*.pytest_cache
-.coverage
 
 # database & logs
 *.db
@@ -13,31 +8,14 @@ __pycache__/
 
 # venv
 env
+venv/*
 venv
-
-# other
-.DS_Store
-
-# javascript
-package-lock.json
-
-staticfiles/*
-!staticfiles/.gitkeep 
-.vscode/symbols.json
-
-apps/static/assets/node_modules
-apps/static/assets/yarn.lock
-apps/static/assets/.temp
-
-# passut
-passut.txt
-
-# muut
-todo.txt
-readme.txt
 
 # .files
 .venv
 .idea
+
+# /static
+static/*
 
 
