@@ -15,7 +15,7 @@ CORE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'asd'
+SECRET_KEY = 'joopajookylkyl503'
 
 # load production server
 ALLOWED_HOSTS = [

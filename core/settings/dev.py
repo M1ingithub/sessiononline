@@ -25,7 +25,7 @@ CORE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'asd'
+SECRET_KEY = 'joopajookylkyl503'
 
 #############################################################
 # SRC: https://devcenter.heroku.com/articles/django-assets
