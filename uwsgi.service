@@ -8,7 +8,7 @@ ExecStart=/mnt/django/sessiononline/venv/bin/uwsgi --ini /mnt/django/sessiononli
 RuntimeDirectory=uwsgi
 Restart=always
 KillSignal=SIGQUIT
-Type=notify
+Type=Forking
 StandardError=syslog
 NotifyAccess=all
 
