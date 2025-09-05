@@ -2,9 +2,10 @@ from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
 from django.urls import path, re_path, include
 from apps.home.views import views
-# from django.contrib.auth.views import LogoutView
 from apps.home.views.loginviews import LoginView, RegisterView, LogoutView
-from apps.home.views.views import AddCommunityView, CommunityListView, ReportView, AboutView
+from apps.home.views.views import AddCommunityView, ReportView, AboutView
+from apps.home.views.views import CommunityListView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -10,4 +10,5 @@ class CommunityModel(models.Model):
     description = models.CharField()
     name = models.CharField()
     token = models.CharField()
+    user = models.CharField(default="asd")
     

@@ -9,6 +9,7 @@ from django.views.generic import ListView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from apps.home.forms.forms.addcommunityform import AddCommunityForm
 from apps.home.models.communitymodel import CommunityModel
+from django.contrib.auth.models import User
 import django_tables2 as tables
 from django_tables2 import SingleTableView
 from apps.home.table.table import CommunityTable
@@ -48,6 +49,7 @@ class CommunityListView(SingleTableView):
                 if count >= 2:
                     CommunityModel.objects.get(custom_id=asd).delete()
     databaseupdate()
+
 
 class ReportView(View):
     def get(self, request):
@@ -99,6 +101,7 @@ class AddCommunityView(ListView, LoginRequiredMixin):
                                 # for g in b[roomtoken2]:  # for v in rjson2[k[a]]:    
                 therightroomdict = search(rjson, roomtoken1)
                 # create database entry for each room
+                currentuser = request.user.username
                 new_community = CommunityModel(
                     communityurl = cd['url'],
                     url = url1,
@@ -108,6 +111,7 @@ class AddCommunityView(ListView, LoginRequiredMixin):
                     # created = datetime.fromtimestamp(tempcreated),
                     name = therightroomdict['name'],
                     token = therightroomdict['token'],
+                    user = currentuser
                 )
                 new_community.save()
         return redirect(reverse('home'))
