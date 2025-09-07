@@ -18,4 +18,9 @@ venv
 # /static
 static/*
 
+# SSL stuff
+foobar.crt
+foobar.csr
+foobar.key
+
 
