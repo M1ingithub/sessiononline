@@ -18,7 +18,7 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name="register"),
     path("logout/", LogoutView.as_view(), name="logout"),
     path("report/", ReportView.as_view(), name="report"),
-    path("about/", AboutView.as_view(), name="about")
+    path("about/", AboutView.as_view(), name="about"),
 ]
 
 """

@@ -8,4 +8,13 @@
 
 #about {
     color: #c7d1e2;
+    font-size: medium;
+}
+
+.topic {
+    color: black;
+    /*
+    color: #c7d1e2;
+    */
+    font-size: x-large;
 }
