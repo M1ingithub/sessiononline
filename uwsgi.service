@@ -2,8 +2,8 @@
 Description=uWSGI daemon
 
 [Service]
-User=djangouser
-Group=djangousers
+User=root
+Group=root
 ExecStart=/mnt/django/sessiononline/venv/bin/uwsgi --ini /mnt/django/sessiononline/core_uwsgi.ini
 RuntimeDirectory=uwsgi
 Restart=always
