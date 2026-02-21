@@ -4,12 +4,12 @@ from django.urls import path, re_path, include
 from apps.home.views import views
 from apps.home.views.loginviews import LoginView, RegisterView, LogoutView
 from apps.home.views.views import AddCommunityView, ReportView, AboutView
-from apps.home.views.views import CommunityListView
+# from apps.home.views.views import CommunityListView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', CommunityListView.as_view(), name='home'),
+    # path('', CommunityListView.as_view(), name='home'),
     # Matches any html file
     # re_path(r'^.*\.*', views.pages, name='pages'),
     # path('addcommunity/', views.addcommunity, name='addcommunity'),

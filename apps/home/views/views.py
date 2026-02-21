@@ -17,7 +17,7 @@ import requests
 import json
 from datetime import datetime
 
-
+"""
 class CommunityListView(SingleTableView):
     model = CommunityModel
     table_class = CommunityTable
@@ -49,7 +49,7 @@ class CommunityListView(SingleTableView):
                 if count >= 2:
                     CommunityModel.objects.get(custom_id=asd).delete()
     databaseupdate()
-
+"""
 
 class ReportView(View):
     def get(self, request):
