@@ -19,13 +19,6 @@ SECRET_KEY = 'joopajookylkyl503'
 
 # load production server
 ALLOWED_HOSTS = [
-    'http://www.session.online',
-    'https://www.session.online',
-    'session.online',
-    'www.session.online',
-    '162.254.34.158',
-    'http://162.254.34.158',
-    'https://162.254.34.158',
     'http://localhost:5432',
     'http://localhost',
     'localhost',
