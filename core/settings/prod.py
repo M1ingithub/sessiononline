@@ -17,6 +17,7 @@ DEBUG = False
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'joopajookylkyl503'
 
+"""
 # load production server
 ALLOWED_HOSTS = [
     'http://www.session.online',
@@ -42,6 +43,8 @@ ALLOWED_HOSTS = [
     'http://72.61.137.156',
     'https://72.61.137.156',
 ]
+"""
+ALLOWED_HOSTS = ['*']
 
 # SSL
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
