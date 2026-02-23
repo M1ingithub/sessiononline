@@ -1,5 +1,4 @@
 
-
 table {
     width: 100vw;
     overflow-x: auto;
@@ -40,4 +39,28 @@ table {
 
 .even {
     background-color: #2a4f58;
+}
+
+
+
+
+
+#tablewrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabletext {
+    color: #c7d1e2;
+    font-size: medium;
+}
+
+.topic {
+    color: black;
+    /*
+    color: #c7d1e2;
+    */
+    font-size: x-large;
 }

@@ -62,6 +62,12 @@ class AboutView(View):
         context = {} # Turha paska, mutta ei renderaa ilman context muuttujaa
         html_template = loader.get_template('home/about.html')
         return HttpResponse(html_template.render(context, request))
+    
+class HowtoView(View):
+    def get(self, request):
+        context = {} # Turha paska, mutta ei renderaa ilman context muuttujaa
+        html_template = loader.get_template('home/howto.html')
+        return HttpResponse(html_template.render(context, request))
 
 @method_decorator(login_required, name='dispatch')
 class AddCommunityView(ListView, LoginRequiredMixin):

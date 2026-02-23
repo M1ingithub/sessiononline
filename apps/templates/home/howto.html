@@ -1,0 +1,107 @@
+{% extends "basepages/basepage.html" %}
+
+{% block title %} how to {% endblock %} 
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ ASSETS_ROOT }}/css/pages/howto.css" />
+{% endblock stylesheets %}
+
+{% block content %}
+
+  <div>
+      <div id="howtowrapper">
+          <div id="howto">
+                <p class="topic">
+                    how to join session communities
+                </p>
+                <p>
+                    guide for Session user.
+                </p>
+                <p>
+                    1. download Session at:<br>
+                    <a href="https://getsession.org/">https://getsession.org/</a><br>
+                    or:<br>
+                    <a href="https://github.com/session-foundation">https://github.com/session-foundation</a><br>
+                    or:<br>
+                    <a href="https://f-droid.org/en/packages/network.loki.messenger.fdroid/">https://f-droid.org/en/packages/network.loki.messenger.fdroid/</a><br>
+                    or:<br>
+                    <a href="https://play.google.com/store/apps/details?id=network.loki.messenger">https://play.google.com/store/apps/details?id=network.loki.messenger</a>
+                </p>
+                <p>
+                    2. start your Session client at your phone or desktop.
+                </p>
+                <p>
+                    3. click "create account" to have new SessionID, a cryptographic identifier unique to you<br>
+                    this ID servers as an 'account'. for example, if you get banned in community, you need new ID.
+                </p>
+                <p>
+                    4. pick a username.
+                </p>
+                <p>
+                    5. save recovery password which will enable you to recover this SessionID later if you lose access.
+                </p>
+                <p>
+                    6. you are ready to roll! join a community by clicking the green "+" -sign at the bottom.<br>
+                    then copy Community URL at our website and paste it in the field "Enter community URL"
+                </p>
+                <br>
+                <p class="topic">
+                    how to add session communities
+                </p>
+                <p>
+                    guide for Session community host.
+                </p>
+                <p>
+                    if you want to add an existing Session community, please use the add community page.
+                </p>
+                <p>
+                    if you don't have Session community but want one and want it listed here, follow these<br>
+                    steps:
+                </p>
+                <p>
+                    1.<br>
+                    rent a server. you need 2GB of RAM and two processor cores. this costs around<br>
+                    10$ / month. i rent mine at:<br>
+                    <a href="https://www.hetzner.com">https://www.hetzner.com</a><br>
+                    use Ubuntu 22.04 OS
+                </p>
+                <p>
+                    2.<br>
+                    create a SSH connection to the server. for this i use PuTTy:<br>
+                    <a href="https://putty.org/index.html">https://putty.org/index.html</a>
+                </p>
+                <p>
+                    3.<br>
+                    follow this github guide to install SOGS on the server.<br>
+                    this installation should contain everything needed to run a session community:<br>
+                    <a href="https://github.com/session-foundation/session-pysogs/">https://github.com/session-foundation/session-pysogs/</a>
+                </p>
+                <p>
+                    4.<br>
+                    you should now be able to create your Session communities.<br>
+                    use "sogs --help" -command on your server.
+                </p>
+                <p>
+                    5.<br>
+                    copy your Session community URL and paste it on "add community" -page.<br>
+                    you need to create an account and login to be able to add a Session community on our<br>
+                    website.<br>
+                </p>
+                <br>
+                <p class="topic">
+                    rules for added communities
+                </p>
+                <p>
+                    all communities added to the list must act in accordance to Session ToS:<br>
+                    <a href="https://getsession.org/terms-of-service">https://getsession.org/terms-of-service</a>
+                </p>
+                <p>
+                    please read the section 5.2 about Content Policy:<br>
+                    Violent Behaviour, Violent Extremism and Terrorism, Child Sexual Exploitation,<br>
+                    Extremely Violence and/or Graphic Content, Harmful and/or Unlawful Content
+                </p>
+          </div>
+      </div>
+  </div>
+{% endblock content %}
+

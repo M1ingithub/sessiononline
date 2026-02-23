@@ -10,8 +10,25 @@
 
 {% block content %}
 
-<tr class="{% cycle "odd" "even" %}"> </tr>
+  <div>
+    <div id="tablewrapper">
+      <div id="tabletext">
+        <p>
+          on this website you can view listed Session communities, their statuses and copy their urls to join
+        </p>
+        <p>
+          on this website you can add your Session community to the list by pasting the url after logging in
+        </p>
+        <p>
+          welcome! have fun! if you have questions, check 'how to' and 'about' -pages
+        </p>
+      </div>
+    </div>  
+    <div>
+      <tr class="{% cycle "odd" "even" %}"> </tr>
 
-{% render_table object_list %}
+      {% render_table object_list %}
+    </div>
+  </div>
 
 {% endblock content %}
