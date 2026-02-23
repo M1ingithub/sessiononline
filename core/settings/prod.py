@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1:5432',
     'http://www.addsc.org',
     'https://www.addsc.org',
+    'https://addsc.org'
     'addsc.org',
     'www.addsc.org',
     '72.61.137.156',
