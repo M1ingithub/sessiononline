@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 CORE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'joopajookylkyl503'
@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
     'http://www.addsc.org',
     'https://www.addsc.org',
     'https://addsc.org'
+    'http://addsc.org'
     'addsc.org',
     'www.addsc.org',
     '72.61.137.156',
